@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>{{titulo}}</h1>
+
+  <div class="row">
+    <div *ngFor="let game of games" class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-image">
+          <img class="game-list-img" [src]="game.url">
+        </div>
+        <div class="card-content">
+          <span class="card-title red-text">{{game.title}}</span>
+          <p>{{game.description}}</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Go to Game</a>
+          <i class="material-icons right activator pink-text">more_vert</i>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title red-text"> <i class="material-icons left pink-text">close</i> {{game.title}}</span>
+          <h5>Admin Actions</h5>
+          <a class="waves-effect waves-light yellow darken-3 btn">Update</a>
+          <a class="waves-effect waves-light red darken-3 btn">Delete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

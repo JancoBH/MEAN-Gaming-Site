@@ -1,0 +1,19 @@
+.background-first{
+  background:linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1) 20%), url('http://cdn4.dualshockers.com/wp-content/uploads/2017/01/NintendoSwitch_SuperMarioOdyssey_Presentation2017_scrn04_bmp_jpgcopy.jpg');
+  background-size: 100% 100%;
+}
+
+.background-second{
+  background:linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1) 20%), url('https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/wiiu_14/SI_WiiU_TheLegendOfZeldaBreathOfTheWild.jpg');
+  background-size: 100% 100%;
+}
+
+.background-3{
+  background:linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1) 20%), url('https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_Arms.jpg');
+  background-size: 100% 100%;
+}
+
+.background-4{
+  background:linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1) 20%),url('https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_Splatoon2.jpg');
+  background-size: 100% 100%;
+}

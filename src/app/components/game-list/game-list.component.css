@@ -1,0 +1,14 @@
+.game-list-img{
+  min-height: 200px;
+  max-height: 400px;
+}
+
+.card-content .card-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-content{
+  height: 150px;
+}
