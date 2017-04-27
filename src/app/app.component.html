@@ -1,13 +1,15 @@
 <nav>
   <div class="nav-wrapper grey darken-4">
-    <a href="#!" class="brand-logo">Stack MEAN - N Switch</a>
+    <a routerLink="/" class="brand-logo">Stack MEAN - N Switch</a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/" class="badge">Home</a></li>
+      <li  routerLinkActive="ac tive" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/" class="badge">Home</a></li>
       <li><a href="#">Gaming News</a></li>
       <li routerLinkActive="active"><a routerLink="/game-list">Gaming List</a></li>
       <li><a href="#">Gaming Reviews</a></li>
-      <li><a class="waves-effect waves-light btn pink accent-3" routerLink="/login" routerLinkActive="active">Login <i class="material-icons right">power_settings_new</i></a></li>
+      <a class="waves-effect waves-light btn pink accent-3" routerLink="/login" *ngIf="!isLoggedIn()"><i class="material-icons right">power_settings_new</i>Log In</a>
+      <a class="waves-effect waves-light btn orange accent-3" routerLink="/signup" *ngIf="!isLoggedIn()">Sign Up</a>
+      <a class="waves-effect waves-light btn pink accent-3" (click)="onLogOut()" *ngIf="isLoggedIn()"><i class="material-icons right">power_settings_new</i>Log Out</a>
     </ul>
     <ul class="side-nav red accent-3" id="mobile-demo">
       <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>

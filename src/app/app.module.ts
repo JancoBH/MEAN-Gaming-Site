@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routes';
@@ -11,6 +11,11 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { GameListComponent } from './components/game-list/game-list.component';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { SignupComponent } from './components/signup/signup.component';
+
+// Providers
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -18,16 +23,19 @@ import { GameDetailComponent } from './components/game-detail/game-detail.compon
     HomeComponent,
     LoginComponent,
     GameListComponent,
-    GameDetailComponent
+    GameDetailComponent,
+    ProfileComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    ReactiveFormsModule,
     MaterializeModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

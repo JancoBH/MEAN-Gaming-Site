@@ -1,0 +1,27 @@
+<div class="container">
+
+  <h2>Registre in Stack MEAN - N Switch Site</h2>
+
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div class="input-field">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" formControlName="firstName">
+    </div>
+    <div class="input-field">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" formControlName="lastName">
+    </div>
+    <div class="input-field">
+      <input type="email" id="email" formControlName="email" class="validate">
+      <label for="email" data-error="wrong" data-success="right">Email</label>
+    </div>
+    <div class="input-field">
+      <label for="password">Password</label>
+      <input type="password" id="password" formControlName="password">
+    </div>
+    <div class="center">
+      <button class="btn waves-effect waves-light" type="submit" [disabled]="!myForm.valid">Submit <i class="material-icons right">send</i></button>
+      <button class="btn waves-effect waves-light pink accent-3" routerLink="/">Cancel <i class="material-icons right">close</i></button>
+    </div>
+  </form>
+</div>
